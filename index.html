@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+ 
+  <body>
+
+    <p class="header text-primary bg-light">Bubble Sort & Binary Search</p> 
+
+    <div style="padding-left: 40%; padding-top: 0.5%;">
+      <p style="padding-left: 9%; padding-bottom: 1%;" class="text-secondary" >Enter values in array</p>
+      <label for="lvalues" class="text-info">Points (between 0 and 100):</label>
+      <input type="range" id="lvalues" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value"/>
+      <output>50</output><br/>
+      <div style="padding-left:11%; padding-top:1%;">
+        <button type="button" class="btn btn-secondary" onclick="add()">Add</button>
+        
+        <button type="button"  class="btn btn-secondary" onclick="generatearray()">Visualize</button>
+
+        <button type="button" class="btn btn-secondary" onclick="window.location.href='index.html';">Clear</button>
+      </div>
+      <p style="padding-left: 10%; padding-top: 1%;" id="added"></p>
+    </div>
+    
+    <div id="array"></div>
+    <br/><br/>
+ 
+    <div style="text-align: center">
+      <label for="fname" class="text-danger">Number to be Searched:</label>
+      <input type="text" id="fname" name="fname" />
+      <br/><br/>
+    </div>
+    
+    <div style="text-align: center">
+      <button type="button" class="btn btn-secondary" onclick="BinarySearch()">Search</button>
+      <button type="button" class="btn btn-secondary"  onclick="BubbleSort()">  Sort  </button>
+      <br/><br/>
+    </div>
+    
+ 
+    <script src="script.js"></script>
+  </body>
+</html>
